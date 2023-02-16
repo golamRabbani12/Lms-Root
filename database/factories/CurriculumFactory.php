@@ -17,7 +17,10 @@ class CurriculumFactory extends Factory
     public function definition()
     {
         return [
-            'number' => $this->faker->numberBetween(1, 10),
+            'name' => $this->faker->sentence,
+            'week_day' => 'sunday',
+            'class_time' => $this->faker->time,
+            'end_date' => $this->faker->date,
             'course_id' => 1,
         ];
     }
